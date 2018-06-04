@@ -7,7 +7,7 @@
   font-family: 'HandelGothic';
   font-weight: normal;
   font-style: normal;
-  src: url("fonts/HANDGOTN.ttf") format("truetype");
+  src: url("/../fonts/handelGothicNormal.ttf") format("truetype");
 }
 
 body {
@@ -177,6 +177,9 @@ img::-moz-selection {
 }
 
 header.masthead {
+  position: relative;
+  z-index: 1;
+  opacity: 0.8;
   text-align: center;
   color: white;
   background-image: url("../img/header-bg.jpg");
@@ -189,9 +192,22 @@ header.masthead {
   background-size: cover;
 }
 
+header.masthead::after {
+  content: "";
+  background: rgba(0, 0, 30, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
 header.masthead .intro-text {
+  position: relative;
   padding-top: 150px;
   padding-bottom: 100px;
+  z-index: 3;
 }
 
 header.masthead .intro-text .intro-lead-in {

@@ -1,5 +1,8 @@
 // Styling for the masthead
 header.masthead {
+  position: relative;
+  z-index: 1;
+  opacity: 0.8;
   text-align: center;
   color: white;
   background-image: url('../img/header-bg.jpg');
@@ -7,9 +10,21 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   @include background-cover;
+  &::after {
+    content: "";
+    background: rgba(0, 0, 30, .6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
   .intro-text {
+    position: relative;
     padding-top: 150px;
     padding-bottom: 100px;
+    z-index: 3;
     .intro-lead-in {
       font-size: 22px;
       font-style: italic;
