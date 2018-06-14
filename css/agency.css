@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Cades v0.7 (https://cades-ifrn.github.io)
+ * Start Bootstrap - Cades v0.0.7 (https://cades-ifrn.github.io)
  * Copyright 2013-2018 CADES
  * Licensed under MIT (https://github.com/BlackrockDigital/cades-ifrn/blob/master/LICENSE)
  */
@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 500;
   font-family: 'HandelGothic', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -68,7 +68,7 @@ section h3.section-subheading {
 
 .btn {
   font-family: 'HandelGothic', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .btn-xl {
@@ -220,7 +220,7 @@ header.masthead .intro-text .intro-lead-in {
 
 header.masthead .intro-text .intro-heading {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 50px;
   margin-bottom: 25px;
   font-family: 'HandelGothic', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -240,7 +240,7 @@ header.masthead .intro-text .intro-heading {
   }
   header.masthead .intro-text .intro-heading {
     font-size: 75px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 75px;
     margin-bottom: 50px;
     font-family: 'HandelGothic', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
