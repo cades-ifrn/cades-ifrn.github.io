@@ -1,5 +1,24 @@
 import React from 'react'
 
+import events from '../assets/events.json'
+
+const Event = ({image, when, title, description, link, isInverted}) => (
+  <li className={`${isInverted ? 'timeline-inverted' : ''}`}>
+    <div className="timeline-image">
+      <img className="rounded-circle img-fluid" src={image} alt="" />
+    </div>
+    <div className="timeline-panel">
+      <div className="timeline-heading">
+        <h5 className="subheading">{when}</h5>
+        <h3>{title}</h3>
+      </div>
+      <div className="timeline-body">
+        <p className="text-muted">{description}</p>
+      </div>
+    </div>
+  </li>
+)
+
 const EventsSection = () => {
   return (
     <section id="eventos">
@@ -13,20 +32,7 @@ const EventsSection = () => {
         <div className="row">
           <div className="col-lg-12">
             <ul className="timeline">
-             {/* <li>
-                <div className="timeline-image">
-                  <img className="rounded-circle img-fluid" src="img/about/1.jpeg" alt="">
-                </div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h4>11 a 13/06</h4>
-                    <h4 className="subheading">8° WTADS</h4>
-                  </div>
-                  <div className="timeline-body">
-                    <p className="text-muted">O 8° Workshop de Tecnologia em Análise e Desenvolvimento de Sistemas (WTADS) contará com palestras, minicursos, mesas-redondas e apresentações de TCCs dos alunos do curso de Análise e Desenvolvimento de Sistemas do IFRN - Campus Natal Central.</p>
-                  </div>
-                </div>
-              </li> */}
+              {events.map((event, index) => (<Event key={index} isInverted={index % 2 === 0} {...event} />))}
               <li className="timeline-inverted">
                 <div className="timeline-image">
                   <h4>Em breve
