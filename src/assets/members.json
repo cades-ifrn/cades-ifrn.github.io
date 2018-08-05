@@ -1,0 +1,110 @@
+[
+    {
+        "name": "David Allysson",
+        "description": "Desenvolvedor",
+        "facebook": "https://facebook.com/david.allysson.9",
+        "linkedin": "https://linkedin.com/in/david-allysson-527791118/",
+        "github": "https://github.com/davidallysson",
+        "twitter": null,
+        "image": "img/team/1.jpg"
+    },
+    {
+        "name": "Esther Aragão",
+        "description": "Desenvolvedora",
+        "facebook": "https://facebook.com/esther.aragao.3",
+        "linkedin": null,
+        "github": "https://github.com/estheraragaos",
+        "twitter": null,
+        "image": "img/team/2.jpg"
+    },
+    {
+        "name": "Francisco Bento",
+        "description": "Desenvolvedor",
+        "facebook": "https://facebook.com/chicobentojr",
+        "linkedin": "https://linkedin.com/in/chicobentojr/",
+        "github": "https://github.com/chicobentojr",
+        "twitter": null,
+        "image": "img/team/3.jpeg"
+    },
+    {
+        "name": "Rafaela Medeiros",
+        "description": "Desenvolvedora",
+        "facebook": "https://facebook.com/rafaela.mikaela.7",
+        "linkedin": null,
+        "github": "https://github.com/RafaelaMicaela",
+        "twitter": null,
+        "image": "img/team/4.jpg"
+    },
+    {
+        "name": "Felipe Pontes",
+        "description": "Desenvolvedor",
+        "facebook": "https://facebook.com/felipemfp",
+        "linkedin": null,
+        "github": "https://github.com/felipemfp",
+        "twitter": null,
+        "image": "img/team/5.jpg"
+    },
+    {
+        "name": "Dayanne Morato",
+        "description": "Desenvolvedora",
+        "facebook": "https://facebook.com/dayanne.dealmeidamorato",
+        "linkedin": null,
+        "github": "https://github.com/DayanneMorato",
+        "twitter": null,
+        "image": "img/team/6.jpg"
+    },
+    {
+        "name": "Albert Morato",
+        "description": "Desenvolvedor",
+        "facebook": "https://facebook.com/albert.dealmeidamorato",
+        "linkedin": null,
+        "github": "https://github.com/albert06",
+        "twitter": null,
+        "image": "img/team/9.jpg"
+    },
+    {
+        "name": "Gésio de Moura",
+        "description": "Desenvolvedor",
+        "facebook": "https://facebook.com/srgesio",
+        "linkedin": null,
+        "github": "https://github.com/srgesio",
+        "twitter": null,
+        "image": "img/team/10.jpg"
+    },
+    {
+        "name": "Helenita Gurgel",
+        "description": "Desenvolvedora",
+        "facebook": "https://facebook.com/helenitagurgel",
+        "linkedin": null,
+        "github": "https://github.com/helenitagurgel",
+        "twitter": null,
+        "image": "img/team/11.jpg"
+    },
+    {
+        "name": "Yves Cabral",
+        "description": "Desenvolvedor",
+        "facebook": "https://facebook.com/yvescabral",
+        "linkedin": null,
+        "github": "https://github.com/yvescabral",
+        "twitter": null,
+        "image": "img/team/12.jpg"
+    },
+    {
+        "name": "Vitor Souza",
+        "description": "Desenvolvedor",
+        "facebook": "https://facebook.com/pvitorzero",
+        "linkedin": null,
+        "github": null,
+        "twitter": null,
+        "image": "img/team/13.jpg"
+    },
+    {
+        "name": "Astrogilda Caroline",
+        "description": "Desenvolvedora",
+        "facebook": "https://facebook.com/astrogilda.carol",
+        "linkedin": null,
+        "github": "https://github.com/AstroCarol",
+        "twitter": null,
+        "image": "img/team/14.jpg"
+    }
+]
