@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'CADES - Célula Acadêmica de Desenvolvimento de Software',
   },
   plugins: ['gatsby-plugin-react-helmet'],
 }
