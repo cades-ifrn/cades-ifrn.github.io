@@ -9,12 +9,12 @@ import ContactSection from '../components/ContactSection'
 import Footer from '../components/Footer'
 
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <div>
     <Navbar />
     <Masthead />
     <AboutSection />
-    <InitiativesSection />
+    <InitiativesSection initiatives={data.allMarkdownRemark.edges} />
     <EventsSection />
     <TeamSection />
     <ContactSection />
@@ -23,3 +23,23 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query InitiativesQuery {
+    allMarkdownRemark(sort: {fields: [frontmatter___title]}) {
+      edges {
+        node {
+          frontmatter {
+            title
+            description
+            thumbnail
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`

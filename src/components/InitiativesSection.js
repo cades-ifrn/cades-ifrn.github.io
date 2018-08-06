@@ -1,6 +1,33 @@
 import React from 'react'
+import Link from "gatsby-link"
 
-const InitiativesSection = () => {
+
+const Initiative = ({title, description, url, thumbnail}) => (
+  <div className="col-md-4 col-sm-6 portfolio-item">
+    <Link className="portfolio-link" to={url}>
+      <div className="portfolio-hover">
+        <div className="portfolio-hover-content">
+          <i className="fa fa-plus fa-3x"></i>
+        </div>
+      </div>
+      <div style={{
+        width: '100%',
+        height: '15rem',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundImage: `url(${thumbnail})`
+      }} src={thumbnail}></div>
+    </Link>
+    <div className="portfolio-caption">
+      <h4>{title}</h4>
+      <p className="text-muted">{description}</p>
+    </div>
+  </div>
+)
+
+const InitiativesSection = ({initiatives}) => {
+  console.log(initiatives)
   return (
     <section className="bg-light" id="iniciativas">
       <div className="container">
@@ -10,49 +37,16 @@ const InitiativesSection = () => {
             <h3 className="section-subheading text-muted">Projetos e iniciativas realizadas pela comunidade</h3>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-4 col-sm-6 portfolio-item">
-            <a className="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div className="portfolio-hover">
-                <div className="portfolio-hover-content">
-                  <i className="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img className="img-fluid" src="img/iniciativas/1.jpg" alt="" />
-            </a>
-            <div className="portfolio-caption">
-              <h4>Grupos de Conversação</h4>
-              <p className="text-muted">Ambiente interativo para a prática de idiomas</p>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 portfolio-item">
-            <a className="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div className="portfolio-hover">
-                <div className="portfolio-hover-content">
-                  <i className="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img className="img-fluid" src="img/iniciativas/2.jpg" alt="" />
-            </a>
-            <div className="portfolio-caption">
-              <h4>Minicursos</h4>
-              <p className="text-muted">Práticas abordando as mais recentes tecnologias</p>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 portfolio-item">
-            <a className="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div className="portfolio-hover">
-                <div className="portfolio-hover-content">
-                  <i className="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img className="img-fluid" src="img/iniciativas/3.jpg" alt="" />
-            </a>
-            <div className="portfolio-caption">
-              <h4>Hackathons</h4>
-              <p className="text-muted">Competições desafiadoras de programação</p>
-            </div>
-          </div>
+        <div className="row" style={{justifyContent: "space-evenly"}}>
+          {initiatives.map(({node}, index) => (
+            <Initiative
+              key={index}
+              title={node.frontmatter.title}
+              description={node.frontmatter.description}
+              url={node.fields.slug}
+              thumbnail={node.frontmatter.thumbnail}
+            />
+          ))}
         </div>
       </div>
     </section>
