@@ -27,7 +27,6 @@ const Initiative = ({title, description, url, thumbnail}) => (
 )
 
 const InitiativesSection = ({initiatives}) => {
-  console.log(initiatives)
   return (
     <section className="bg-light" id="iniciativas">
       <div className="container">

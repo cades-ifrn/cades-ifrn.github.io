@@ -12,7 +12,7 @@ import Footer from '../components/Footer'
 const IndexPage = ({data}) => (
   <div>
     <Navbar />
-    <Masthead />
+    <Masthead heading="Conheça a cades" subheading="Seja bem vindo!" action="Saiba mais" />
     <AboutSection />
     <InitiativesSection initiatives={data.allMarkdownRemark.edges} />
     <EventsSection />

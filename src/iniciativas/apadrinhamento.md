@@ -1,6 +1,6 @@
 ---
 title: "Apadrinhamento"
-description: "Padrinhos e madrinhas para calouros"
+description: "Padrinhos e madrinhas para acompanhar os calouros"
 thumbnail: "/img/iniciativas/5.jpeg"
 ---
 

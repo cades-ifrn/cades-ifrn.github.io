@@ -1,6 +1,6 @@
 ---
 title: "Recepção dos Calouros"
-description: "Dando boas vindas aos novos calouros"
+description: "Dando boas vindas aos novos calouros e compartilhando experiências"
 thumbnail: "/img/iniciativas/4.jpg"
 ---
 

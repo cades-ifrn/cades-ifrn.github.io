@@ -1,6 +1,6 @@
 ---
-title: "Minicursos"
-description: "Práticas abordando as mais recentes tecnologias"
+title: "Treinamentos"
+description: "Workshops abordando diversos tópicos da nossa área"
 thumbnail: "/img/iniciativas/2.jpg"
 ---
 

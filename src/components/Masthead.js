@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Masthead = () => (
-  <header className="masthead">
+const Masthead = ({heading, subheading, action='Conheça', image='/img/header-bg.jpg'}) => (
+  <header className="masthead" style={{backgroundImage: `url(${image})`}}>
     <div className="container">
       <div className="intro-text">
-        <div className="intro-heading text-uppercase">Cades</div>
-        <div className="intro-lead-in">Comunidade para estudantes de tecnologia do IFRN</div>
-        <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#objetivos">Conheça</a>
+        <div className="intro-lead-in">{subheading}</div>
+        <div className="intro-heading text-uppercase">{heading}</div>
+        {action && <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#objetivos">{action}</a>}
       </div>
     </div>
   </header>

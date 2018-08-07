@@ -5,9 +5,9 @@ const Navbar = ({isDetail=false}) => {
   return (
     <nav className={`navbar navbar-expand-lg navbar-dark fixed-top ${isDetail ? 'navbar-shrink' : ''}`} id="mainNav">
       <div className="container">
-        <a className="navbar-brand js-scroll-trigger" href="#page-top">
-          <img style={{maxWidth: '3rem'}} src="/img/logo.png" />
-        </a>
+        <Link className="navbar-brand js-scroll-trigger" to={isDetail ? '/' : '#page-top' }>
+          <img style={{maxWidth: '6rem'}} src="/img/logo.svg" />
+        </Link>
 
         <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i className="fa fa-bars"></i>

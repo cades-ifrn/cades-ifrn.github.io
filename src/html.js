@@ -36,7 +36,7 @@ module.exports = class HTML extends React.Component {
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" />
-          <link rel="stylesheet" href="css/agency.min.css" />
+          <link rel="stylesheet" href="/css/main.css" />
           {css}
         </head>
         <body {...this.props.bodyAttributes}>
@@ -50,7 +50,6 @@ module.exports = class HTML extends React.Component {
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-          <script src="js/agency.min.js"></script>
         </body>
       </html>
     )
